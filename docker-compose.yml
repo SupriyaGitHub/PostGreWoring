@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  postgresqltest:
+    image: ${DOCKER_REGISTRY} postgresqltest
+    build:
+      context: .
+      dockerfile: PostgreSQLTest/Dockerfile

@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+   build:
+    commands: 
+      - cat docker-compose.yml
+      - docker-compose up
+      
+      
