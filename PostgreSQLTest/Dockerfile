@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
-COPY ./PostGreWoring/PostgreSQLTest/PostgreSQLTest.csproj ./
+COPY ./PostGreWoring/PostgreSQLTest/PostgreSQLTest.csproj .
 RUN dotnet restore 
 COPY . .
 WORKDIR /src
