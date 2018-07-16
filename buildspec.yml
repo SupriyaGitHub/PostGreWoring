@@ -14,7 +14,7 @@ phases:
       - echo Building the Docker image...        
       - docker build -t postgresqloncodebuild .
 
-post_build:
+  post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
