@@ -19,4 +19,5 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
+      - docker tag postgresqloncodebuild $REPOSITORY_URI:fcdsrepository
       - docker push $REPOSITORY_URI:fcdsrepository   
